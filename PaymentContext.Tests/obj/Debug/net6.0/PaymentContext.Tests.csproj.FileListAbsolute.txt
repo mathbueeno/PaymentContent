@@ -96,3 +96,8 @@ D:\Projetos\PaymentContent\PaymentContext.Tests\obj\Debug\net6.0\refint\PaymentC
 D:\Projetos\PaymentContent\PaymentContext.Tests\obj\Debug\net6.0\PaymentContext.Tests.pdb
 D:\Projetos\PaymentContent\PaymentContext.Tests\obj\Debug\net6.0\PaymentContext.Tests.genruntimeconfig.cache
 D:\Projetos\PaymentContent\PaymentContext.Tests\obj\Debug\net6.0\ref\PaymentContext.Tests.dll
+D:\Projetos\PaymentContent\PaymentContext.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\Projetos\PaymentContent\PaymentContext.Tests\bin\Debug\net6.0\PaymentContext.Domain.dll
+D:\Projetos\PaymentContent\PaymentContext.Tests\bin\Debug\net6.0\PaymentContext.Shared.dll
+D:\Projetos\PaymentContent\PaymentContext.Tests\bin\Debug\net6.0\PaymentContext.Shared.pdb
+D:\Projetos\PaymentContent\PaymentContext.Tests\bin\Debug\net6.0\PaymentContext.Domain.pdb
