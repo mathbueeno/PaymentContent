@@ -8,12 +8,15 @@ namespace PaymentContext.Domain.Entities
     {
         // Aqui trata-se de Solid e Clean Code. 
         // "Se você está escrevendo um código pela 2x consecutiva, você precisa pensar em refatorar ele "
+
+        private IList<Subscription> _subscriptions;
         public Student(string firstName, string lastName, string document, string email)
         {
             FirstName = firstName;
             LastName = lastName;
             Document = document;
             Email = email;
+            _subscriptions = new List<Subscription>();
 
         }
 
@@ -22,7 +25,7 @@ namespace PaymentContext.Domain.Entities
         public string Document { get; private set; }
         public string Email { get; private set; }
         public string Address { get; private set; }
-        public IReadOnlyCollection<Subscription> Subscriptions { get; private set; }
+        public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
 
         public void AddSubscription(Subscription subscription)
         {
@@ -34,7 +37,7 @@ namespace PaymentContext.Domain.Entities
                 sub.Active = false;
             }
 
-            Subscriptions.Add(subscription);
+            _subscriptions.Add(subscription);
         }
     }
 
