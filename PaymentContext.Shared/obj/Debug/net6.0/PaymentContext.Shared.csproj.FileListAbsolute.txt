@@ -1,0 +1,12 @@
+D:\Projetos\PaymentContent\PaymentContext.Shared\bin\Debug\net6.0\PaymentContext.Shared.deps.json
+D:\Projetos\PaymentContent\PaymentContext.Shared\bin\Debug\net6.0\PaymentContext.Shared.dll
+D:\Projetos\PaymentContent\PaymentContext.Shared\bin\Debug\net6.0\PaymentContext.Shared.pdb
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\PaymentContext.Shared.csproj.AssemblyReference.cache
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\PaymentContext.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\PaymentContext.Shared.AssemblyInfoInputs.cache
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\PaymentContext.Shared.AssemblyInfo.cs
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\PaymentContext.Shared.csproj.CoreCompileInputs.cache
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\PaymentContext.Shared.dll
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\refint\PaymentContext.Shared.dll
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\PaymentContext.Shared.pdb
+D:\Projetos\PaymentContent\PaymentContext.Shared\obj\Debug\net6.0\ref\PaymentContext.Shared.dll
