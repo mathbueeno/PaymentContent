@@ -13,7 +13,7 @@ namespace PaymentContext.Domain.Entities
             //1- Gerou novo Guid, 2- Converteu para String, 3- Removeu o traço, 4- pegou 10 primeiros caracteres
             // 5- Deixou maiúsculo
 
-            Number = Guid.NewGuid().ToString().Replace("-", "").ToString(0, 10).ToUpper();
+            Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 10).ToUpper();
             PaidDate = paidDate;
             ExpireDate = expireDate;
             Total = total;
