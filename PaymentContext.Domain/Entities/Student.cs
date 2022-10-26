@@ -33,9 +33,8 @@ namespace PaymentContext.Domain.Entities
 
             // Cancela todas as outras assinaturas e coloca esta como principal
             foreach (var sub in Subscriptions)
-            {
-                sub.Active = false;
-            }
+                sub.Inactivate();
+
 
             _subscriptions.Add(subscription);
         }
