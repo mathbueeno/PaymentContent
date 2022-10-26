@@ -1,8 +1,11 @@
 // Value Objects são tipos que compõem uma entidade.
 
+using PaymentContext.Shared.ValueObjects;
+
 namespace PaymentContext.Domain.ValueObjects
 {
     public class Name : ValueObject
+
     {
         public Name(string firstName, string lastName)
         {

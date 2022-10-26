@@ -2,7 +2,7 @@ namespace PaymentContext.Shared.Entities
 {
     public abstract class Entity
     {
-        protected Entity(Guid id)
+        public Entity()
         {
             Id = Guid.NewGuid();
         }
