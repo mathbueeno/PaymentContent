@@ -1,4 +1,4 @@
-using PaymentContext.Domain.Entities.ValueObjects;
+using PaymentContext.Domain.ValueObjects;
 using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Domain.Entities

@@ -1,4 +1,5 @@
 using System;
+using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Domain.Entities
 {
@@ -8,7 +9,7 @@ namespace PaymentContext.Domain.Entities
     // Abstract - significa que ela fica em abstrato, tendo que ser relacionada o qualquer outro tipo abaixo, por exemplo : Boleto
     public abstract class Payment
     {
-        protected Payment(DateTime paidDate, DateTime expireDate, decimal total, decimal totalPaid, string owner, string document, string address, string email)
+        protected Payment(DateTime paidDate, DateTime expireDate, decimal total, decimal totalPaid, string owner, Document document, string address, string email)
         {
             //1- Gerou novo Guid, 2- Converteu para String, 3- Removeu o traço, 4- pegou 10 primeiros caracteres
             // 5- Deixou maiúsculo
@@ -30,7 +31,7 @@ namespace PaymentContext.Domain.Entities
         public decimal Total { get; private set; }
         public decimal TotalPaid { get; private set; }
         public string Owner { get; private set; }
-        public string Document { get; private set; }
+        public Document Document { get; private set; }
         public string Address { get; private set; }
         public string Email { get; private set; }
 
