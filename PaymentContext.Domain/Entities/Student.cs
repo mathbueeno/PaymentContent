@@ -21,6 +21,9 @@ namespace PaymentContext.Domain.Entities
             Email = email;
             _subscriptions = new List<Subscription>();
 
+            AddNotifications(name, document, email);
+
+
         }
 
         // Tipo Complexo 
@@ -35,11 +38,21 @@ namespace PaymentContext.Domain.Entities
             // Se já tiver uma assinatura ativa, cancela.
 
             // Cancela todas as outras assinaturas e coloca esta como principal
-            foreach (var sub in Subscriptions)
-                sub.Inactivate();
+            var = hasSubscriptionActive = false;
+            foreach (var sub in _subscriptions)
+            {
+                if (sub.Active)
+                    HasSubscriptionActive = true;
+            }
 
+            // AddNotifications(new Contract
+            // .Requires()
+            // .IsFalse(hasSubscriptionActive, "Student.Subscriptions", "Você já tem uma assinatura ativa")
+            // );
 
-            _subscriptions.Add(subscription);
+            // Alternativa 
+            if (hasSubscriptionActive)
+                AddNotification("Student.Subscriptions", "Você já tem uma assinatura ativa");
         }
     }
 
