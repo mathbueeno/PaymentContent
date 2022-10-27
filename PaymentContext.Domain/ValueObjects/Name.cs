@@ -13,8 +13,13 @@ namespace PaymentContext.Domain.ValueObjects
             this.LastName = lastName;
 
             // Validação - Se o primeiro nome for nulo ou vazio,
-            if (string.IsNullOrEmpty(name.FirstName))
+            if (string.IsNullOrEmpty(FirstName))
                 AddNotification("Name.FirstName", "Nome Inválido");
+
+            if (string.IsNullOrEmpty(LastName))
+                AddNotification("Name.LastName", "Sobrenome Inválido");
+
+
         }
 
         public string FirstName { get; private set; }

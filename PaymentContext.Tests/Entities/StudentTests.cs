@@ -1,15 +1,13 @@
+using PaymentContext.Domain.ValueObjects;
+
 namespace PaymentContext.Tests;
 
 [TestClass]
 public class StudentTests
 {
     [TestMethod]
-    public void TestMethod1()
+    public void AdicionarAssinatura()
     {
-        // Criação de Instância
-        // var subscription = new Subscription(null);
-        // var student = new Student("Matheus", "Bueno", "123654", "bueno@gmail.com");
-        // student.AddSubscription(subscription);
 
     }
 }
