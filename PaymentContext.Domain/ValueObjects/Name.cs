@@ -1,5 +1,7 @@
 // Value Objects são tipos que compõem uma entidade.
 
+
+using Flunt.Validations;
 using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
@@ -13,11 +15,11 @@ namespace PaymentContext.Domain.ValueObjects
             this.LastName = lastName;
 
             // Validação - Se o primeiro nome for nulo ou vazio,
-            if (string.IsNullOrEmpty(FirstName))
-                AddNotification("Name.FirstName", "Nome Inválido");
-
-            if (string.IsNullOrEmpty(LastName))
-                AddNotification("Name.LastName", "Sobrenome Inválido");
+            AddNotifications(new Contract
+                .IsRequires()
+                .HasMinLen(FirstName, 3, "Name.FirstName", "Nome deve conter pelo menos 3 caracteres")
+                .HasMinLen(FirstName, 3, "Name.LastName", "Sobrenome deve conter pelo menos 3 caracteres")
+            );
 
 
         }
